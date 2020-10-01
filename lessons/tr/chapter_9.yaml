@@ -115,40 +115,28 @@
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5ea5dd58c287602ceb4a1e4b7d7c018a
 - title: Ön Yükleme Modülü
   content_markdown: |
-    You might be wondering how we have access to `Vec` or `Box`
-    everywhere without a `use` to import them. It is because of the module
-    `prelude` in the standard library.
+    Şu ana kadar `Vec` ve `Box` türlerine `use` anahtar kelimesi kullanmak zorunda kalmadan nasıl eriştiğimizi merak ediyor olabilirsiniz. 
+    Bunun cevabı standart kütüphanede yer alan ve `prelude` olarak adlandırılan ön yükleme modülünde gizlidir.
 
-    Know that in the Rust standard library anything that is exported in
-    `std::prelude::*` is automatically available to every part of Rust.
-    That is the case for `Vec` and `Box` but others as well (Option, Copy,
-    etc.).
-- title: Your Own Prelude
+    Standart kütüphaneden `std::prelude::*` olarak dışa aktarılan her şey, Rust'un her bir parçası tarafından otomatik olarak erişilebilir durumdadır. 
+    Bu, `Vec`, `Box` için olduğu gibi **Option**, **Copy** gibi özellikler için de geçerlidir.
+- title: Kendi Ön Yükleme Kütüphaneniz
   content_markdown: >
-    Because of standard library's prelude, it's common for your libary to have
-    its own prelude module as a starting point for 
-
-    where users should import all of the most common data structures for using
-    your library (e.g `use my_library::prelude::*`).
-
-    It doesn't automatically get used in programs/libraries that use your crate,
-    but it's a good convention to follow so people
-
-    know where to start.
+    Standart kütüphanede olduğu gibi, kişisel kütüphanelere özgü ön yükleme müdülleri sunmak oldukça yaygın bir davranış şeklidir. Örneğin 
+    `use  kutuphanem::prelude::*` şeklindeki ön yükleme modülleri, kütüphanenizden yararlanmak isteyen kullanıcılara, sık kullanacakları veri 
+    yapılarını içe aktarabilecekleri, hızlı başlangıç yapma olanağını sağlar. Bu özel ön yükleme modülleri, kullanıldıkları program tarafından 
+    otomatik şekilde yüklenmiyor olsa bile, kullanıcılara nereden başlayacaklarını gösterdiğinden, çoğunlukla uyulan faydalı bir gelenektir.
 
 
-    Ferris says, "Be a good rustacean and help a fellow crab out with a good
-    prelude!"
-- title: Chapter 9 - Conclusion
+    Ve son olarak Ferris'in sözlerine kulak verelim: "İyi bir rustacean olup sandıklarınız için ön yükleme kütüphaneleri sağlayarak diğer, 
+    Rust programcılarının güzel bir başlangıç yapmalarına yardımcı olun!"
+- title: Bölüm 9 - Sonuç
   content_markdown: >
-    You now have a few tricks up your sleeve when it comes to creating Rust
-    applications and libraries ready for the world. Don't
-
-    worry about remembering it all. As your library grows and is used by other
-    people, you'll find what works best at each milestone.
+    Artık Rust kitaplıkları ve uygulamaları oluşturmak hakkında çok şey biliyor durumdasınız. Sizden burada anlatılan her şeyi, her zaman 
+    hatırlamanız gerektiği yanılgısına düşmemenizi istiyorum. Kütüphaneleriniz büyüyüp geliştikçe ve diğer geliştiriciler tarafından 
+    kullanıldıkça, karşılaşacağınız her soruna doğru çözümler getireceğinizi şimdiden biliyorum.
 
 
-    Resources:
+    Kaynaklar:
 
-    - [Guidelines For Writing Rust
-    APIs](https://rust-lang.github.io/api-guidelines/)
+    - [Rust API Yazma Kılavuzu](https://rust-lang.github.io/api-guidelines/)
