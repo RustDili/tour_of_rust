@@ -4,7 +4,7 @@
     temsil etmenin kanıtlanmış bir yoludur. Ancak zaman içinde bilgisayar bilimi, veri toplama ve soyutlamaya izin veren başka 
     programlama paradigmalarından da yararlanmıştır.
     
-    Diğer programlama dillerinden geliyorsanız, bu programlama paradigmalarından biri olan nesne yönelimli programlamaya, yani **OOP**'a 
+    Diğer programlama dillerinden geliyorsanız, bu programlama paradigmalarından biri olan nesne yönelimli programlamaya, yani **Object Oriented Programming (OOP)**'a 
     aşina olabilirsiniz. 
     
     Bu bölümde Rust programlama dilini, işlevlerin ötesinde bir programlama dili olarak yeniden keşfedeceğiz.
@@ -72,7 +72,7 @@
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c8159fc427a65f979803374f1c236ea7
   content_markdown: >
-    Rust'ta bir dizi yöntemi **struct** ve **enum** gibi yapılandırılmış türlerle ilişkilendirmemize izin veren yapılara özellik adını veririz. 
+    Rust'ta bir dizi yöntemi **struct** ve **enum** gibi yapılandırılmış türlerle ilişkilendirmemize izin veren yapılara özellik (trait) adını veririz. 
     Ve Rust çok biçimlilik özellikler aracılığıyla desteklenir. 
 
 
@@ -128,7 +128,7 @@
 
     * Statik iletim - Bu çağrı şeklinde örneğin türü zaten bilindiğinden, çağrılacak işlev hakkında doğrudan bilgimiz vardır.
 
-     * Dinamik iletim - Bu çağrı şeklinde örnek türü bilinmediğinden, doğru işlevi çağırmanın bir yolunu bulmamız gerekir.
+    * Dinamik iletim - Bu çağrı şeklinde örnek türü bilinmediğinden, doğru işlevi çağırmanın bir yolunu bulmamız gerekir.
 
 
     `&dyn BirOzellik` şeklinde sembolize edebileceğimiz özellik türleri, dinamik iletimi kullanarak, nesne örnekleriyle dolaylı şekilde çalışmamızı sağlarlar.
@@ -146,7 +146,7 @@
 
 
     O halde bir özellik nesnesi: "Bir örneğin doğru metotlarını, dinamik iletim yoluyla ve dolaylı olarak çağırmamıza izin veren, hem örneğin kendi 
-    işaretçisini, hem örneğin işlevlerine yönelik işaretçilerin listesini tutan yapıdır" denilebilir.
+    işaretçisini, hem de örneğin işlevlerine yönelik işaretçilerin listesini tutan yapıdır" denilebilir.
 
 
     Bellek ayrıntıları:
@@ -163,7 +163,7 @@
 
     * `Dolaylama` -  Her ne kadar dolaylamanın başka yolları olsa da, örneği öbek üzerine konumlandırmak ve bu örneğe yalnızca bir işaretçi depolamak, 
     tür boyutu hakkında güvenebileceğimiz bir dolaylılık düzeyi sağlar.
-- title: Genel İşlevler
+- title: Genel Tür İşlevleri
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=745f3d602be54c4a9bc738f15af487ac
   content_markdown: >
@@ -201,7 +201,7 @@
     }
     ```
 
-    Yukarıdaki ifadenin eşdeğeridir:
+    Yukarıdaki ifade ile aynıdır:
 
     ```rust
     fn bir_islev<T>(tur: T)
