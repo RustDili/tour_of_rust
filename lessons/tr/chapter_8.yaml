@@ -20,7 +20,7 @@
     geçerli olduğunu garantilemez.
 
 
-    Rust'un iki türlü ham işareçisi vardır:
+    Rust'ın iki türlü ham işareçisi vardır:
 
 
     * `*const T` - Asla değişmemesi gereken **T** türündeki verilere yönelik ham işaretçi.
@@ -177,8 +177,8 @@
     öbek üzerindeki hatayı belirli bir tür bildirmeksizin yaymamıza ve bu hatayla yüksek düzeyde etkileşim kurmamıza olanak sağlar.
 
 
-    Turumuzun ilk bölümlerinde Rust'un main işlevinin hata döndürebileceğini öğrenmiştik. Buna ek olarak yine main işlevinden, hatanın temsil 
-    edildiği veri yapısı Rust'un ortak `Error` özelliğini uyguladığı sürece, bir programda meydana gelebilecek her türlü hatayı tanımlayabilen 
+    Turumuzun ilk bölümlerinde Rust'ın main işlevinin hata döndürebileceğini öğrenmiştik. Buna ek olarak yine main işlevinden, hatanın temsil 
+    edildiği veri yapısı Rust'ın ortak `Error` özelliğini uyguladığı sürece, bir programda meydana gelebilecek her türlü hatayı tanımlayabilen 
     bir tür döndürebiliriz.
 
 
@@ -205,7 +205,7 @@
     sisteminin kötüye kullanılmasını önlemektir. Bu yapıyla ilgili bilinmesi gereken tek kural aşağıda yer almaktadır:
 
 
-    **Ya sadece bir tane değişken referansınız, YA DA çok sayıda değişmez referansınız olabilir. İkisinin birden olmasına izin verilmez!**
+    **Ya sadece bir tane değişken referansınız, ya da çok sayıda değişmez referansınız olabilir. İkisinin birden olmasına izin verilmez!**
 
 
     Bu kuralın ihlali `RefCell` özelliğinin panik üretmesine ve programın durdurulmasına sebep olur.
@@ -245,12 +245,12 @@
 
     * Bu kombinasyonların çoğu olasılıkla çok sayıda akıllı işaretçiye ait olan ve dahili verileri değiştirmek için değişmez bir veri türünü kullanan 
     tek bir modeli takip eder. Rust'ın "dahili değişkenlik" olarak adlandırdığı bu model, çalışma zamanında bellek kullanım kurallarını atlamamıza 
-    izin verirken, Rust'un derleme zamanında bize verdiği güvenlik düzeyini de korumamıza yardımcı olur.
+    izin verirken, Rust'ın derleme zamanında bize verdiği güvenlik düzeyini de korumamıza yardımcı olur.
       
 - title: Bölüm 8 - Sonuç
   content_markdown: >
     Aslında birer Rust programlama dili deyimi olan ve oldukça sık kullanılan akıllı işaretçiler, bizleri yaygın bellek kullanım modellerini yeniden 
-    oluşturma zahmetinden kurtarmakla beraber, her türlü zorlukla yüzleşmeye hazır hale getirir. Artık Rust'un temellerini kavradığımıza göre daha 
+    oluşturma zahmetinden kurtarmakla beraber, her türlü zorlukla yüzleşmeye hazır hale getirir. Artık Rust'ın temellerini kavradığımıza göre daha 
     büyük projelere yelken açabiliriz.
     
     Bir sonraki bölümde tek sayfalık kodlara veda edecek ve büyük projelerin nasıl oluşturulduğunu tartışacağız.
