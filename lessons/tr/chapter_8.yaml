@@ -99,6 +99,8 @@
     println!("{}", (***ref_ref_ref_f).deger);
 
     ```
+  code: >-
+    https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e17e9a477a8ab5a0d0b075ff07e33d4a
 - title: Akıllı İşaretçiler
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2e831c6b3f6601c23501e4a164bb1fd7
