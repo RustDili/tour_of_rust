@@ -29,7 +29,7 @@
 
     Kendi yöntemlerinizi nasıl oluşturacağımızı ilerleyen bölümlerde öğreneceğiz.
   code: >-
-    https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=fb0ece472c8d870680b12df6bc27d115
+    https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d70bb070562cd4ae89aecf0dcf931e82
 - title: Bellek
   content_markdown: >
    Rust programlarında veriler belleğin üç ayrı bölgesinde depolanırlar:
