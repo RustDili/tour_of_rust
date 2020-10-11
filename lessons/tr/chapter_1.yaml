@@ -16,7 +16,7 @@
     Bu araç Rust ile oynamak ve ürettiklerinizi başkalarıyla paylaşmak için harika bir olanaktır!
 - title: Değişkenler
   code: >-
-    https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6db511016a9091d0a097d3a1e0f3b738
+    https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d5eddb4a7fc9e9d884a3785ad4ae9683
   content_markdown: >
     Değişkenler **let** anahtar sözcüğü kullanılarak bildirilir.
 
@@ -29,7 +29,7 @@
     Buna, **değişken gölgeleme** denir ve bu isme her başvurulduğunda değişkenin türü de değiştirilebilir.
 
 
-    Değişken isimleri kelimelerin alt_tire ile birbirine bağlandığı `lover_snake_case` biçiminde seçilmelidir.
+    Değişken isimleri kelimelerin alt_tire ile birbirine bağlandığı `snake_case` biçiminde seçilmelidir.
 - title: Değişkenlerin Değiştirilmesi
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723acfe27f79659876e1f7f2eee16a8d
